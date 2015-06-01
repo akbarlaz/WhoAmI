@@ -1,0 +1,4 @@
+﻿Module MHasil
+    Public a, b, c, d As Integer
+
+End Module
