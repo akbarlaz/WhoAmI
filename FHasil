@@ -1,0 +1,38 @@
+﻿Public Class FHasil
+
+ 
+
+
+    
+    Private Sub FHasil_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        If a > b And a > c Then
+            RTBHasil.Text = "Anda tergolong tipe visual !!! Tipe visual adalah tipe orang yang cenderung menerima informasi paling banyak dan paling efektif menggunakan indera pengelihatan (visual). Strategi belajar yang cocok bagi tipe visual : 1.) Gunakanlah variasi warna dalam melakukan pencatatan, seperti memberi garis bawah atau membuat grafik. 2.) Mayoritas, tipe visual suka membaca. Namun, buku bacaan yang banyak memiliki gambar ilustrasi dan warna yang menarik lebih mudah dipahami daripada buku bacaan yang penuh dengan teks. 3.) Perhatikan penerangan saat belajar dan hindari polusi visual. 4.) Saat mengingat sesuatu, bayangkan dan buat tulisan yang memudahan. 5.) Catat kembali bahan pelajaran dengan warna dan gambar yang menarik."
+        ElseIf b > a And b > c Then
+            RTBHasil.Text = "Anda tergolong tipe auditory !!! Tipe auditory adalah tipe orang yang cenderung menerima informasi paling banyak dan paling efektif menggunakan indera pendengaran (Audio). Strategi belajar yang cocok bagi tipe auditory. 1.)Gunakanlah voice recorder atau perekan 1.) Gunakanlah voice recorder atau perekan suara saat mendengarkan pelajaran. 2(Perbanyak melakukan perbanyak lagi, elsei "
+        Else
+            RTBHasil.Text = "Anda tergolong tipe kinestetik !!! Tipe kinestetik adalah tipe orang yang cenderung menerima informasi paling banyak dan paling efektif dengan melibatkan gerakan tubuh, peragaan, aktifitas fisik.strategi belajar yang cocok bagi tipe kinestetik. 1.) Gunakanlah gerakan dalam pelajaran, seperti aktifitas atau uji coba secara langsung. 2.) Perbanyak praktik yang berkaitan dengan pelajaran ( praktik di laboratorium ) dan langsung bisa diaplikasikan. 3.) Hindari belajar yang monoton ( terlalu banyak duduk ). 4.) Saat mengingat sesuatu lakukan hal yang diingat dengan aktifitas gerak. 5.) Menulis diudara, gunakan gerak imajinatif."
+        End If
+
+    End Sub
+
+    
+    Private Sub BMenu_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BMenu.Click
+        FMain.Show()
+        Me.Close()
+        a = 0
+        b = 0
+        c = 0
+        d = 0
+
+    End Sub
+
+    Private Sub BUlang_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BUlang.Click
+        P1F01.Show()
+        Me.Close()
+        a = 0
+        b = 0
+        c = 0
+        d = 0
+
+    End Sub
+End Class
