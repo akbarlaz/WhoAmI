@@ -1,0 +1,29 @@
+﻿Public Class P1F05
+
+    Private Sub BLanjut_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BLanjut.Click
+        If RB01.Checked Then
+            a = a + 1
+            P1F06.Show()
+            Me.Hide()
+        ElseIf RB02.Checked Then
+            b = b + 1
+            P1F06.Show()
+            Me.Hide()
+        ElseIf RB03.Checked Then
+            c = c + 1
+            P1F06.Show()
+            Me.Hide()
+        Else
+            MsgBox("Silahkan pilih salah satu !")
+        End If
+        
+    End Sub
+
+
+    Private Sub BMenu_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BMenu.Click
+        FMain.Show()
+        Me.Close()
+    End Sub
+
+    
+End Class
